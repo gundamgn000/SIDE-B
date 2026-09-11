@@ -9,3 +9,18 @@
 @media(max-width:600px){.shell{width:calc(100% - 32px)}.site-header{padding-inline:12px}.brand img{height:18px}.brand-name{font-size:18px}.header-actions{gap:0}.icon-button{width:34px}.member-trigger{font-size:14px;padding-inline:5px}.section-heading{align-items:start;gap:12px}.section-heading h2{font-size:30px}.section-heading .text-link{font-size:14px;margin-top:8px}.product-grid{gap:25px 14px}.card-title h3{font-size:16px}.card-meta{font-size:12px;flex-wrap:wrap}.card-artist{font-size:14px;min-height:22px}.footer-grid{gap:34px 20px}.footer-column:nth-child(2){order:1}.footer-column:nth-child(4){order:2}.footer-column:nth-child(3){order:3}.footer-column:nth-child(5){order:4}.footer-bottom{display:block}.footer-bottom span{display:block;margin-top:8px}.site-footer{padding-bottom:70px}.panel{padding:22px}.theme-switcher{right:8px;bottom:8px}.footer-statement{font-size:17vw}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;transition-delay:0s!important;animation:none!important}}
 .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:34px;border-top:2px solid var(--ink);padding-top:19px}.section-head h2{font-size:clamp(32px,4vw,54px);line-height:1;letter-spacing:-.045em;margin-top:8px}.section-head>a{font-size:14px;border-bottom:1px solid;padding-bottom:4px}.drawer-nav>button{display:block;width:100%;text-align:left;padding:16px 0;border-bottom:1px solid var(--line);font-size:17px}
+
+/* 套版字級規格：資訊文字至少 16px，小標題 16–18px；更換內容時請勿用縮字解決溢出。 */
+.eyebrow,.text-link,.button,.desktop-nav,.dropdown a,.dropdown button,.member-trigger,.section-head>a{font-size:16px}
+.card-meta,.card-artist,.price{font-size:16px}
+.footer-brand>p,.footer-column,.footer-column a,.footer-column button,.footer-column span,.footer-column p,.footer-bottom{font-size:16px}
+.footer-column h3{font-size:18px}
+.footer-column button{padding:0;color:#b9b8b0;text-align:left}
+.footer-column button:hover{color:var(--accent)}
+.footer-statement{color:rgba(239,238,232,.09);font-size:clamp(92px,18vw,250px);line-height:.78;letter-spacing:.02em;text-align:center;white-space:nowrap;overflow:hidden}
+.policy-copy{color:var(--muted);font-size:16px;line-height:1.9}
+.drawer-nav details a,.theme-switcher button,.toast{font-size:16px}
+
+/* 小螢幕桌機沿用前版的緊湊商品呈現。 */
+@media(min-width:601px){.product-grid{width:70%;margin-inline:auto}.rec-viewport{width:70%;margin-inline:auto}}
+@media(max-width:600px){body{font-size:16px}.product-grid,.rec-viewport{width:100%}.member-trigger,.section-heading .text-link,.card-meta,.card-artist,.footer-bottom,.theme-switcher button{font-size:16px}.footer-statement{font-size:27vw;margin-bottom:42px}}

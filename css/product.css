@@ -3,3 +3,10 @@
 .lightbox{position:fixed;inset:0;z-index:110000;background:#111e;display:flex;align-items:center;justify-content:center;opacity:1;visibility:visible;transition:.25s}.lightbox[hidden]{display:flex!important;opacity:0;visibility:hidden;pointer-events:none}.lb-dialog{pointer-events:none;display:flex;flex-direction:column;align-items:center}.lb-dialog img{pointer-events:auto;max-width:76vw;max-height:76vh;width:auto;height:auto;object-fit:contain}.lb-dialog p{color:#fff;font:12px var(--mono);margin-top:14px}.lb-close,.lb-nav{position:fixed;pointer-events:auto;border:0;display:grid;place-items:center;cursor:pointer}.lb-close{right:24px;top:24px;width:48px;height:48px;border-radius:50%;background:#fff;color:#111;font-size:28px}.lb-nav{top:50%;transform:translateY(-50%);width:48px;height:64px;background:#fff;color:#111;font-size:24px}.lb-prev{left:28px}.lb-next{right:28px}
 @media(max-width:900px){.detail-shell{grid-template-columns:1fr}.gallery{position:static}.main-image{max-width:480px}.product-info{max-width:700px;margin:auto}.rec-track .product-card{flex-basis:calc((100% - 24px)/2)}}
 @media(max-width:600px){.catalog-head{padding:50px 0}.detail{padding-top:22px}.main-image{max-width:100%}.thumb{flex-basis:calc((100% - 18px)/3)}.purchase{grid-template-columns:106px 1fr}.meta-list div{grid-template-columns:110px 1fr}.tracklist li{grid-template-columns:44px 1fr auto;font-size:12px}.rec-track .product-card{flex-basis:100%}.lb-dialog img{max-width:88vw;max-height:74vh}.lb-nav{width:42px;height:56px}.lb-prev{left:8px}.lb-next{right:8px}}
+
+/* 商品資訊、圖庫標示與篩選文字至少 16px。 */
+.filter-bar button,.result-count,.gallery-caption,.product-info .crumb,.edition-head,.edition-options button,.meta-list div,.tracklist li,.lb-dialog p{font-size:16px}
+@media(max-width:600px){.tracklist li{font-size:16px}}
+
+/* 主圖下方僅保留圖片計數，不顯示縮圖說明文字。 */
+.gallery-caption span+span{display:none}
